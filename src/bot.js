@@ -1,8 +1,10 @@
 const Bot = require('./lib/Bot')
 const SOFA = require('sofa-js')
 const Fiat = require('./lib/Fiat')
+//const Augur = require('./lib/augur')
 
 let bot = new Bot()
+
 
 // ROUTING
 
@@ -73,7 +75,7 @@ function welcome(session) {
 }
 
 function pong(session) {
-  sendMessage(session, `Pong`)
+  sendMessage(session, `Pong_New`)
 }
 
 // example of how to store state on each user
